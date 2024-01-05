@@ -10,4 +10,14 @@ int main(){
 
     std::cout<<"value: "<<++value<<std::endl;
     std::cout <<"new value: "<<value<<std::endl;
+    //Operator compounding
+    value = value + 5;
+    std::cout <<value<<std::endl;
+    std::cout <<"+++++++++++++++++++++++++++++++++++++"<<std::endl;
+    value +=5;
+    std::cout<<"compound value is: "<<value<<std::endl;
+    value -=6;
+    std::cout<<"new compound value is: "<<value<<std::endl;
+
+
 }
