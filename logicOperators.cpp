@@ -10,7 +10,8 @@ int main(){
     std:: cout <<"What is the gender:? "<<std::endl;
     std:: cin>>gender;
     std:: cout << std::boolalpha;
-    std:: cout <<(number0 > number1) ||(number0 == number1)<<std::endl;
-    std:: cout <<(number0 > number1) && (gender =='M')<< std::endl;
+    std:: cout <<((number0 > number1) ||(number0 == number1))<<std::endl;
+    std:: cout <<((number0 > number1) && (gender =='M'))<< std::endl;
+    std:: cout <<!( (number0 < number1) && (gender == 'M'))<< std::endl;
 
 }
