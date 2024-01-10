@@ -13,5 +13,6 @@ int main(){
     std:: cout <<((number0 > number1) ||(number0 == number1))<<std::endl;
     std:: cout <<((number0 > number1) && (gender =='M'))<< std::endl;
     std:: cout <<!( (number0 < number1) && (gender == 'M'))<< std::endl;
+    std:: cout <<((number0 < number1) || ((gender == 'M')&&(number0 == number1)))<< std::endl;
 
 }
