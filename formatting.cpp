@@ -3,6 +3,8 @@
 
 int main(){
     int name_col{30};
+    int fist_number{34};
+    int second_number{10};
     //endl give the option to move to a new line
     //Experimentation without endl from iostream library
     std::cout <<"Hello Jane ";
@@ -30,6 +32,7 @@ int main(){
    std::cout <<"Jude Rogan"<<" SoftWare Engineer"<<" $3000 " <<1<<std::endl;
    std::cout <<"Warrason Paul"<<" Machine Learning Engineer"<<" $3500 "<<2<<std::endl;
    std::cout <<"formatted table\n";
+   std::cout << std::setfill('-');
    std::cout <<std::setw(name_col) <<"Employee name"<<std::setw(name_col) <<" Rule"<<std::setw(name_col)<<" Salary "<<std::setw(name_col) << "Years of experience"<<std::endl;
    std::cout <<std::setw(name_col)<<"Janifer Lopes"<<std::setw(name_col)<<" Sr SoftWare Engineer"<<std::setw(name_col) <<" $3000 "<<std::setw(name_col) << 10<<std::endl;
    std::cout <<std::setw(name_col)<<"Donald Richard"<<std::setw(name_col)<<" Data Scienctist "<<std::   setw(name_col)<<" $2500 "<<std::setw(name_col) << 4<<std::endl;
@@ -43,5 +46,7 @@ int main(){
    std::cout <<std::setw(10)<< -23.55<<std::endl;
    std::cout << std::internal;//pushes sign to the left and number to the right
    std::cout <<std::setw(10)<<-23.55<<std::endl;
+   std::boolalpha; //enable that true or false be printed instead of 0 or 1
+   std::cout <<(fist_number < second_number)<<std::endl;
 
 }
