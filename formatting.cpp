@@ -3,7 +3,7 @@
 
 int main(){
     int name_col{30};
-    int fist_number{34};
+    int first_number{-34};
     int second_number{10};
     //endl give the option to move to a new line
     //Experimentation without endl from iostream library
@@ -46,7 +46,13 @@ int main(){
    std::cout <<std::setw(10)<< -23.55<<std::endl;
    std::cout << std::internal;//pushes sign to the left and number to the right
    std::cout <<std::setw(10)<<-23.55<<std::endl;
-   std::boolalpha; //enable that true or false be printed instead of 0 or 1
-   std::cout <<(fist_number < second_number)<<std::endl;
-
+   std::cout << std::endl;
+   std::cout <<std::boolalpha; //enable that true or false be printed instead of 0 or 1
+   std::cout <<(first_number < second_number)<<std::endl;
+  
+  std::cout <<std::endl;
+  std::cout <<std::showpos; //shows the sign if a number
+  std::cout << second_number<<std::endl;
+  std::cout <<std::noshowpos;
+  std::cout <<second_number;
 }
