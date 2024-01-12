@@ -38,6 +38,10 @@ int main(){
    std::cout <<std::setw(name_col)<<"Jeremy Gics"<<std::setw(name_col)<<" Sr Data scientist"<<std::setw(name_col)<<" $85000 "<<std::setw(name_col) << 10<<std::endl;
    std::cout <<std::setw(name_col)<<"Jude Rogan"<<std::setw(name_col)<<" SoftWare Engineer"<<std::setw(name_col)<<" $3000 " << 1<<std::setw(name_col)<<std::endl;
    std::cout <<std::setw(name_col)<<"Warrason Paul"<<std::setw(name_col)<<" Machine Learning Engineer"<<std::setw(name_col)<<" $3500 " <<std::setw(name_col)<< 2<<std::endl;
-
+   //Experiment with left/right justification and internal justification
+   std::cout << std:: right;//pushed number and it's sign to the right
+   std::cout <<std::setw(10)<< -23.55<<std::endl;
+   std::cout << std::internal;//pushes sign to the left and number to the right
+   std::cout <<std::setw(10)<<-23.55<<std::endl;
 
 }
