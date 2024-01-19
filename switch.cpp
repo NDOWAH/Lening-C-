@@ -1,7 +1,8 @@
 # include<iostream>
 
 int main(){
-    int mark{90};
+    int mark{85};
+    /*
     switch (mark)
     {
     case 90:{
@@ -18,6 +19,20 @@ int main(){
     default:{
         std::cout<<"You failed";
     }
+        break;
+    }*/
+
+    switch (mark)
+    {
+    case 90:
+    case 88:
+    case 85:
+        {
+         std::cout<<"A grade";
+        }
+        break;
+    
+    default:
         break;
     }
 
