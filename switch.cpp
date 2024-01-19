@@ -1,5 +1,6 @@
 # include<iostream>
-
+/*Switch statement is only applicable in the following typs
+integral type and enum: short, long int unsigned etc*/
 int main(){
     int mark{85};
     /*
