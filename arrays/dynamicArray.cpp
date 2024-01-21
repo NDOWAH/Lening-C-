@@ -7,12 +7,12 @@ int main(){
     }*/
 
     //using constand arrays
-    const double scores[]{34.56, 56.345, 34.0, 34.56, 25.566};
+    const double scores[]{34.56, 56.345, 34.0, 34.56, 25.566, 55.0};
     int sum = 0;
 
     for(auto value:scores){
         sum +=value;
-        std::cout<<sum<<std::endl;//displays the cummulation
+        std::cout<<sum<<std::endl; //displays the cummulation
     }
     std::cout <<sum<<std::endl; //displays the total sum
 }
