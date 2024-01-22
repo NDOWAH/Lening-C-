@@ -48,7 +48,16 @@ memory that is not ours.*/
 
    std::cout<<"dynamically allocating memory"<<std::endl;
    std::cout <<"*p_number2: "<<*p_number2<<std::endl;
-
+   //release memory back to the OS.
+   delete p_number2;
+   p_number2 = nullptr //Good practice to reset released memory to null.
+   /*
+   We now try to store data in memory we have already released, we have no access to.
+   the program crashes.
+   */
+  std::cout<<"Writing to bad memory\n";
+  *p_number2 = 56;
+  std::cout<<"Done writing\n";
 
 
     return 0;
