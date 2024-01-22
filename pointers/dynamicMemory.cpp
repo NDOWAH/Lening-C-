@@ -23,12 +23,33 @@ it is equavalent to *p_number1{nullptr}
 This indicates that the pointer points to nowhere
 The program below crashes because we are trying to use
 memory that is not ours.*/
+/*
    std::cout<<"The program below crashes"<<std::endl;
     int *p_number1{};//
     *p_number1 = 54; //Writing to a pointer that points to nowhere: Bad practice.
     std::cout<<"Reading and writing to null pointers"<<std::endl;
     std::cout<<"The pointer *p_number1 points to: "<<p_number1<<" address"<<std::endl;
     std::cout<<"Its value is: "<<*p_number1<<std::endl;
+    */
+   std::cout<<"Dynamic memory allocation from a heap\n";
+   /*
+   The code below dynamically allocate space for a single int in the heap memory.
+   This memory belongs to the program from now on.
+   The system can't used it for anything else until we release it.
+   After the line of code below executes we would have a valid memory allocated.
+   The size of the allocated memory will be such that it can store the type 
+   pointed to by the pointer.
+
+   */
+   int *p_number2{nullptr};
+   p_number2 = new int;
+
+   *p_number2 = 34; //writing to dynamically allocated memory, 34 is now stored in heap not stack.
+
+   std::cout<<"dynamically allocating memory"<<std::endl;
+   std::cout <<"*p_number2: "<<*p_number2<<std::endl;
+
+
 
     return 0;
 }
