@@ -22,6 +22,7 @@ int main(){
    std::cout<<"=================Case2:deleted dangling pointers==========================\n\n";
 
    delete p_NUMBER1;
+   p_NUMBER1 = nullptr;
    std::cout<<"The address of the deleted pointer p_NUMBER is: "<<p_NUMBER1<<std::endl;
    std::cout<<"The current value of the deleted pointer p_NUMBER is: "<<*p_NUMBER1<<std::endl;
 
@@ -34,6 +35,7 @@ int main(){
 
    std::cout<<"===========delete parent variable for multiple memory allocation==================\n";
    delete p_NUMBER2;
+   p_NUMBER2 = nullptr;
    std::cout<<"The address of p_NUMBER is: "<<p_NUMBER2<<std::endl;
    std::cout<<"The current value of p_NUMBER is: "<<*p_NUMBER2<<std::endl;
    std::cout<<"The address of p_NUMBER is: "<<p_NUMBER3<<std::endl;
