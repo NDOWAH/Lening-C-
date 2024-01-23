@@ -82,7 +82,7 @@ memory that is not ours.*/
   delete p_number5;
   p_number5 = nullptr;
 
-
+  std::cout<<"The address of p_number4 is: "<<p_number4<<std::endl;//this now prints gabbage.
 
     return 0;
 }
