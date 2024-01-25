@@ -20,7 +20,10 @@ int main(){
     std::cout << std::size(scores)<<std::endl; //displays the size of an array at run time.
 */ 
 
-//dynamically allocating arrays in the heap memory
+/*dynamically allocating arrays in the heap memory
+with this array the size functions is not applicable.
+Range for loop is also not applicable
+*/
 double *p_salary{new double[size]}; //array declared in heap with null/gabbage values
 for(size_t i=0; i<=size; ++i){
     std::cout<<i<<"--->"<<p_salary[i]<<std::endl;
