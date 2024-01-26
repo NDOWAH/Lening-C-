@@ -25,8 +25,8 @@ int main(){
     new_value = 90;
     new_double_value = 120;
     std::cout<<"New_value: "<<new_value<<" address: "<<&new_value<<" address of value: "
-    <<&value<<std::endl;
+    <<&value<<"Value: "<<value<<std::endl;
     std::cout<<"new_double_value: "<<new_double_value<<" address: "<<&new_double_value<<" address of value "
-    <<&double_value<<std::endl;
+    <<&double_value<<"double value: "<<std::endl;
 
 }
