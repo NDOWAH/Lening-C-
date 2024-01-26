@@ -3,8 +3,10 @@
 /*Referencing is a way of setting up aliases for variables. 
 With this aliases we can modify the variables with them
 ---References can not be change to reference something else opposed to pointers
+---in this sense, they work like cont pointers
 ---they must be initialized at declaration not in the case of pointers
----not advicable to use references for reading and writting*/
+---not advicable to use references for reading and writting
+*/
 int main(){
     int value{30};
     double double_value{235543};
