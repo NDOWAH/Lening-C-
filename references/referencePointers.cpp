@@ -23,6 +23,17 @@ The statement below prints 34.55 but the address still remains the
 same as in previous case*/
 std::cout<<"ref_value: "<<ref_value<<" ref_value address: "<<&ref_value<<std::endl;
 
+std::cout<<"===============constant reference===================\n\n";
+int age = 35;
+int mark = 95;
+int &ref_age = age;//can be modified
+const int ref_mark = mark;//can't be modified
+ref_age ++;
+std::cout<<"The new reference value is: "<<ref_age;
+
+
+
+
 
 
 
