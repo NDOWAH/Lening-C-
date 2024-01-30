@@ -1,5 +1,6 @@
 # include <iostream>
 # include <string>
+//reference doc https://en.cppreference.com/w/cpp/locale
 
 int main(){
     char c_upper{'C'};
